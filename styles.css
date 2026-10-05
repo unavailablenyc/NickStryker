@@ -428,9 +428,80 @@ select option { color: #111; }
 .site-footer a:hover { color: var(--lime); }
 
 @media (max-width: 900px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.72rem;
+    min-height: 0;
+    padding: 0.85rem var(--pad) 0.75rem;
+    max-width: 100%;
+  }
+
+  .wordmark {
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+
+  .nav {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.55rem;
+  }
+
+  .nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: clamp(0.64rem, 2.8vw, 0.7rem);
+  }
+
+  .section-head {
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.55rem;
+  }
+
+  .section-head .eyebrow,
+  .section-head a {
+    white-space: nowrap;
+  }
+
+  .section-head a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .section-head a::before {
+    content: "•";
+    color: var(--muted);
+    font-size: 1.7rem;
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+
   .grid, .grid-2, .fit-layout { grid-template-columns: 1fr; }
   .hero { justify-content: flex-start; min-height: auto; padding-top: 3.2rem; }
-  .display { font-size: clamp(2.8rem, 14vw, 5.5rem); }
+  .display {
+    font-size: min(calc((100vw - 2 * var(--pad) - 0.5rem) / 6.46), 11.4rem);
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: keep-all;
+  }
+  .letters {
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: keep-all;
+  }
+  .meta {
+    white-space: nowrap;
+    font-size: clamp(0.5rem, 2.4vw, 0.72rem);
+  }
 }
 
 @keyframes rise {
