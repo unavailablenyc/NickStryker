@@ -467,6 +467,7 @@ select option { color: #111; }
 
   .section-head .eyebrow,
   .section-head a {
+    font-size: 0.64rem;
     white-space: nowrap;
   }
 
@@ -479,10 +480,16 @@ select option { color: #111; }
   .section-head a::before {
     content: "•";
     color: var(--muted);
-    font-size: 1.7rem;
-    line-height: 1;
-    letter-spacing: 0;
+    font-size: 4.75rem;
     font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.33em;
+    height: 0.22em;
+    overflow: visible;
   }
 
   .grid, .grid-2, .fit-layout { grid-template-columns: 1fr; }
