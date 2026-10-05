@@ -1,0 +1,121 @@
+# New host is https://unavailable.nyc/ (apex).
+# Live Wix currently 301s the apex to https://www.unavailable.nyc.
+# After GoDaddy DNS points here, www should 301 to the apex.
+# Old Wix product URLs are mapped to the closest page on this site.
+# They are not recreated.
+
+[[redirects]]
+  from = "https://www.unavailable.nyc/*"
+  to = "https://unavailable.nyc/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/product-page/hood"
+  to = "/collection.html#hood"
+  status = 301
+
+[[redirects]]
+  from = "/product-page/belt-bag"
+  to = "/collection.html#belt-bag"
+  status = 301
+
+[[redirects]]
+  from = "/product-page/infamous-tee"
+  to = "/collection.html#tee"
+  status = 301
+
+[[redirects]]
+  from = "/product-page/the-jester"
+  to = "/collection.html#jester"
+  status = 301
+
+[[redirects]]
+  from = "/product-page/shredder-gauntlet"
+  to = "/collection.html#gauntlet"
+  status = 301
+
+[[redirects]]
+  from = "/product-page/leather-cravat"
+  to = "/collection.html#cravat"
+  status = 301
+
+[[redirects]]
+  from = "/product-page/couture-denim-jeans"
+  to = "/collection.html#jeans"
+  status = 301
+
+[[redirects]]
+  from = "/product-page/pectoral-charms-bolos"
+  to = "/collection.html#charms"
+  status = 301
+
+[[redirects]]
+  from = "/product-page/*"
+  to = "/collection.html"
+  status = 301
+
+[[redirects]]
+  from = "/category/*"
+  to = "/collection.html"
+  status = 301
+
+[[redirects]]
+  from = "/book-online"
+  to = "/fitting.html"
+  status = 301
+
+[[redirects]]
+  from = "/booking-calendar"
+  to = "/fitting.html"
+  status = 301
+
+[[redirects]]
+  from = "/service-page/belt-bag"
+  to = "/fitting.html?piece=Belt%20Bag"
+  status = 301
+
+[[redirects]]
+  from = "/service-page/strap"
+  to = "/fitting.html?piece=Strap"
+  status = 301
+
+[[redirects]]
+  from = "/service-page/bespoke-experience"
+  to = "/fitting.html?piece=Bespoke"
+  status = 301
+
+[[redirects]]
+  from = "/service-page/*"
+  to = "/fitting.html"
+  status = 301
+
+[[redirects]]
+  from = "/cart"
+  to = "/fitting.html"
+  status = 301
+
+[[redirects]]
+  from = "/checkout"
+  to = "/fitting.html"
+  status = 301
+
+[[redirects]]
+  from = "/thank-you-page"
+  to = "/fitting.html"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio-collections/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/ndnd"
+  to = "/"
+  status = 301

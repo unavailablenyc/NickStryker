@@ -1,0 +1,43 @@
+# New host is https://unavailable.nyc/ (apex).
+# Live Wix currently does the opposite: apex 301s to https://www.unavailable.nyc.
+# These rules apply after DNS points at this site (Netlify or Cloudflare Pages).
+# python http.server does not read this file.
+
+https://www.unavailable.nyc/*  https://unavailable.nyc/:splat  301!
+
+# Indexed Wix product pages -> the piece on the collection.
+/product-page/hood                    /collection.html#hood       301
+/product-page/belt-bag                /collection.html#belt-bag   301
+/product-page/infamous-tee            /collection.html#tee        301
+/product-page/the-jester              /collection.html#jester     301
+/product-page/shredder-gauntlet       /collection.html#gauntlet   301
+/product-page/leather-cravat          /collection.html#cravat     301
+/product-page/couture-denim-jeans     /collection.html#jeans      301
+/product-page/pectoral-charms-bolos   /collection.html#charms     301
+/product-page/*                        /collection.html            301
+
+# Wix store categories -> collection.
+/category/all-products                 /collection.html            301
+/category/featured-pieces              /collection.html            301
+/category/limited-availability         /collection.html            301
+/category/timeless-elegance            /collection.html            301
+/category/mysterious-allure            /collection.html            301
+/category/bold-geometry                /collection.html            301
+/category/curre                        /collection.html            301
+/category/*                            /collection.html            301
+
+# Booking and services -> a fitting request.
+/book-online                           /fitting.html               301
+/booking-calendar                      /fitting.html               301
+/service-page/belt-bag                 /fitting.html?piece=Belt%20Bag            301
+/service-page/strap                    /fitting.html?piece=Strap                 301
+/service-page/bespoke-experience       /fitting.html?piece=Bespoke               301
+/service-page/*                        /fitting.html               301
+
+# Wix cart, checkout, and the template portfolio are not part of this site.
+/cart                                  /fitting.html               301
+/checkout                              /fitting.html               301
+/thank-you-page                        /fitting.html               301
+/portfolio                             /                               301
+/portfolio-collections/*               /                               301
+/ndnd                                  /                               301

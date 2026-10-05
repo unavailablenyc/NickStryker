@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /brotherhoods-preview/
+
+Sitemap: https://unavailable.nyc/sitemap.xml
