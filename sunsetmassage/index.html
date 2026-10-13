@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sunset massage — Unavailable</title>
+  <meta name="description" content="Wednesday, October 14. Rooftop tea time at 4 and sunset massages at 6. An Effervescenz evening hosted by Nick Stryker and Marz Katz, near Columbus Circle." />
+  <link rel="canonical" href="https://unavailable.nyc/sunsetmassage/" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="/images/mark-b.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/mark-b.png" />
+  <meta property="og:title" content="Sunset massage — Unavailable" />
+  <meta property="og:description" content="Wednesday, October 14. Rooftop tea time at 4 and sunset massages at 6, near Columbus Circle." />
+  <meta property="og:url" content="https://unavailable.nyc/sunsetmassage/" />
+  <meta property="og:site_name" content="Unavailable By Nick" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Sunset massage — Unavailable" />
+  <meta name="twitter:description" content="Wednesday, October 14. Rooftop tea time at 4 and sunset massages at 6, near Columbus Circle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>html,body{background:#000;color:#f3efe6}</style>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/sunsetmassage/event.css" />
+</head>
+<body>
+  <div class="bubble-layer" id="bubble-layer" aria-hidden="true"></div>
+  <a class="skip" href="#rsvp">Skip to RSVP</a>
+  <header class="site-header">
+    <a class="wordmark" href="/">Unavailable</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/collection.html">Collection</a>
+      <a href="/story.html">Story</a>
+      <a href="/fitting.html">Book a fitting</a>
+    </nav>
+  </header>
+  <main id="main" class="section">
+    <p class="eyebrow">Effervescenz</p>
+    <h1 class="page-title">Sunset massage</h1>
+    <p class="event-meta">Hosted by Nick Stryker and Marz Katz</p>
+    <p class="intro"><time datetime="2026-10-14">Wednesday, October 14</time>. West 57th Street and 10th Avenue, Manhattan, near Columbus Circle.</p>
+
+    <dl class="when">
+      <div>
+        <dt>4 p.m.</dt>
+        <dd>Rooftop tea time</dd>
+      </div>
+      <div>
+        <dt>6 p.m.</dt>
+        <dd>Sunset massages</dd>
+      </div>
+    </dl>
+
+    <ul class="notes">
+      <li>On the roof, underwear or a robe must be worn.</li>
+      <li>The space is clothing optional, with a designated play space.</li>
+      <li>BYOB. The evening is very low-key.</li>
+    </ul>
+
+    <section id="rsvp" aria-labelledby="rsvp-title">
+      <h2 class="event-sub" id="rsvp-title">RSVP</h2>
+      <p class="intro">Add a name for each guest. When you confirm, you'll get the address and see who else is coming.</p>
+      <form id="rsvp-form">
+        <div id="guest-rows">
+          <div class="name-row">
+            <label>Guest 1
+              <input class="guest-name" type="text" maxlength="80" autocomplete="name" />
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-line add-name" id="add-guest" type="button">Add another name</button>
+        <p class="form-error" id="form-error" hidden></p>
+        <button class="btn btn-lime btn-block" id="confirm" type="submit">Confirm</button>
+      </form>
+      <noscript>
+        <p class="form-note">Turn on JavaScript to confirm. The address and the guest list show on this page after you RSVP.</p>
+      </noscript>
+    </section>
+
+    <section class="confirmed" id="confirmed" hidden aria-labelledby="confirmed-title">
+      <p class="eyebrow">You're confirmed</p>
+      <h2 class="event-sub" id="confirmed-title" tabindex="-1">Here's where to go.</h2>
+      <div id="door"></div>
+      <p class="form-note" id="list-note" hidden>The shared list didn't update. Your name may be missing below. Try confirming again in a moment.</p>
+      <p class="coming-label" id="coming-label">Who's coming</p>
+      <ul class="coming" id="coming" aria-live="polite"></ul>
+      <div class="confirmed-actions">
+        <a class="btn btn-line" id="maps" href="#">Open in Maps</a>
+        <button class="linkish" id="edit-names" type="button">Edit names</button>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <span>unavailable.nyc</span>
+    <a href="mailto:nickstryker@gmail.com">nickstryker@gmail.com</a>
+    <span>West 57th Street</span>
+  </footer>
+  <script src="/sunsetmassage/rsvp.js"></script>
+  <script type="module" src="/sunsetmassage/bubbles.js"></script>
+</body>
+</html>
