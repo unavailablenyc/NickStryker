@@ -208,7 +208,6 @@
   height: 100%;
   object-fit: cover;
   object-position: center 46%;
-  filter: brightness(1.22) saturate(1.18) sepia(0.12);
 }
 
 .skyline canvas {
@@ -232,7 +231,7 @@
     rgba(255, 78, 36, 0.08) 78%,
     transparent 100%
   );
-  mix-blend-mode: soft-light;
+  opacity: 0.55;
 }
 
 .skyline .scrim {
@@ -254,7 +253,7 @@ main,
 @media (max-width: 900px) {
   .skyline .scrim {
     background:
-      linear-gradient(180deg, rgba(36, 16, 10, 0.42), rgba(24, 10, 8, 0.62) 28%, rgba(16, 8, 6, 0.7));
+      linear-gradient(180deg, rgba(36, 16, 10, 0.29), rgba(24, 10, 8, 0.42) 28%, rgba(16, 8, 6, 0.48));
   }
 }
 
